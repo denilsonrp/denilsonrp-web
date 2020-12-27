@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: #171619;
     color: #C5C5C5;
     font-family: 'Andika New Basic', sans-serif;
+    font-size: 100%;
   }
 
   a {
@@ -55,16 +56,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin: 0;
-  }
-
-  /**
-  * Correct the font size and margin on h1 elements within section and
-  * article contexts in Chrome, Firefox, and Safari.
-  */
-
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
   }
 
   /* Grouping content
