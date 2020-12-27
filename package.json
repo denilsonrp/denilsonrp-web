@@ -1,12 +1,18 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "denilsonrp.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Website of Denilson Raimundo de Paula",
   "version": "0.1.0",
   "author": "Denilson Raimundo de Paula <denilsonraimundo10@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "add": "^2.0.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
@@ -19,7 +25,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "prettier": "2.2.1"

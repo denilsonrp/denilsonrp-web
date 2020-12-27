@@ -1,8 +1,12 @@
 import { createGlobalStyle } from "styled-components"
 import Fonts from './fonts'
+import Helpers from './helpers'
+import Modifiers from './modifiers'
 
 const GlobalStyles = createGlobalStyle`
   ${Fonts}
+  ${Helpers}
+  ${Modifiers}
 
   * {
     border: 0;
@@ -32,19 +36,38 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  time {
+    display: inline-block;
+    font-size: 12px;
+  }
+
   /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
   /* Document
     ========================================================================== */
 
   /**
-  * 1. Correct the line height in all browsers.
-  * 2. Prevent adjustments of font size after orientation changes in iOS.
+  * Prevent adjustments of font size after orientation changes in iOS.
   */
 
   html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%;
   }
 
   /* Sections
