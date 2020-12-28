@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Denilson Raimundo de Paula | Web and Mobile Developer`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Personal Website of Denilson Raimundo de Paula`,
+    author: `@denilsonrp`,
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,

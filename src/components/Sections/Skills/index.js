@@ -13,18 +13,14 @@ import {
   faLinux
 } from '@fortawesome/free-brands-svg-icons'
 
-import {
-  faDatabase
-} from '@fortawesome/free-solid-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-import {
-  List
-} from './styles'
+import { List } from './styles'
 
 import Section from '../../Section'
 
 const SectionSkills = () => (
-  <Section title='skills()'>
+  <Section title='skills()' id='skills'>
     <List>
       <li>
         <FontAwesomeIcon icon={faHtml5} aria-label="html 5" title="html 5" size='3x' />

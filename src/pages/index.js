@@ -1,10 +1,11 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import SectionHome from '../components/Sections/Home'
 import SectionAbout from '../components/Sections/About'
-import SectionExperiences from '../components/Sections/Experiences'
+import SectionContact from '../components/Sections/Contact'
 import SectionEducation from '../components/Sections/Education'
+import SectionExperiences from '../components/Sections/Experiences'
+import SectionHome from '../components/Sections/Home'
 import SectionSkills from '../components/Sections/Skills'
 import SEO from '../components/seo'
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <SectionExperiences />
     <SectionEducation />
     <SectionSkills />
+    <SectionContact />
   </Layout>
 )
 

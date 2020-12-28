@@ -3,7 +3,7 @@ import React from 'react'
 import Section from '../../Section'
 
 const SectionExperiences = () => (
-  <Section title='experiences()'>
+  <Section title='experiences()' id='experiences'>
     <h3 className="-featured-color">@Climatempo</h3>
     <h4>Fullstack Developer</h4>
     <time dateTime="2017-06">June 2017</time> - <time dateTime="2020-12">December 2020</time>

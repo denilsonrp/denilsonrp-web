@@ -21,7 +21,7 @@ export const SectionContainer = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   justify-content: center;
   text-align: center;
 `

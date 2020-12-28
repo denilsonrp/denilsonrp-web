@@ -5,8 +5,8 @@ import {
   SectionTitle
 } from './styles'
 
-const Section = ({ children, title }) => (
-  <SectionContainer>
+const Section = ({ children, id, title }) => (
+  <SectionContainer id={id}>
     <SectionTitle>{title}</SectionTitle>
     
     {children}

@@ -2,8 +2,13 @@ import styled from 'styled-components'
 
 export const List = styled.ul`
   &:first-of-type {
-    display: flex;
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+
+    li {
+      justify-content: center;
+    }
   }
 
   :not(:first-of-type) {

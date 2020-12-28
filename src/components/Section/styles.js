@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 export const SectionContainer = styled.section`
   counter-increment: section-counter;
-  padding-bottom: 100px;
-  padding-top: 100px;
   margin: 0 auto;
   max-width: 800px;
+  padding: 100px 10px;
 `
 
 export const SectionTitle = styled.h2`
