@@ -11,7 +11,8 @@ const SectionAbout = () => (
     <p>Since 2018 I help to organize <a href="https://phpvale.github.io" className='-featured-color' title="Site da comunidade PHPVale" target="_blank" rel="noreferrer">@PHPVale</a>, a PHP meetup focused on the Paraíba Valley, in the interior of São Paulo.</p>
 
     <Button
-      href='/'
+      href='https://drive.google.com/file/d/1pep0BmLe6V6cuziwkB6-vMeKt0Dm6E9y/view?usp=sharing'
+      target='_blank'
       title='Download my Resume'
       className='_margin-t-40'
     />
