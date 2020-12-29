@@ -2,8 +2,8 @@ import React from 'react'
 
 import { ButtonContainer } from './styles'
 
-const Button = ({ href, title, style }) => (
-  <ButtonContainer href={href} className={style}>
+const Button = ({ href, title, className }) => (
+  <ButtonContainer href={href} className={className}>
     {title}
   </ButtonContainer>
 )

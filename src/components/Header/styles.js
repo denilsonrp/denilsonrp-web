@@ -60,6 +60,10 @@ export const NavLinksOl = styled.ol`
 
 export const SocialLinksUl = styled.ul`
   display: flex;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
+
+  li > a {
+    font-size: 24px;
+  }
 `

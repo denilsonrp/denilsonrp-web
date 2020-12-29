@@ -61,6 +61,7 @@ const SectionSkills = () => (
       <li>ITCSS</li>
       <li>RSCSS</li>
       <li>Task runners</li>
+      <li>Docker</li>
     </List>
   </Section>
 )

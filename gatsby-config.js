@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Denilson Raimundo de Paula | Web and Mobile Developer`,
-    description: `Personal Website of Denilson Raimundo de Paula`,
+    description: `Denilson Raimundo de Paula, Web and Mobile Developer, graduated in Databases and post graduated in system development for web and mobile.`,
     author: `@denilsonrp`,
   },
   plugins: [
