@@ -24,4 +24,6 @@ export const SectionContainer = styled.section`
   height: calc(100vh - 80px);
   justify-content: center;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 `

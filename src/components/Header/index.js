@@ -9,8 +9,10 @@ import {
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import { 
+import {
+  HamburguerMenu,
   HeaderContainer, 
+  InputHamburguerMenu,
   Logo,
   NavLinks,
   NavLinksOl,
@@ -19,6 +21,7 @@ import {
 
 const Header = () => (
   <HeaderContainer>
+    <InputHamburguerMenu type="checkbox" id="chkHamburguerMenu" />
     
     <Logo>
       <span>de</span>
@@ -63,6 +66,10 @@ const Header = () => (
         </a>
       </li>
     </SocialLinksUl>
+
+    <HamburguerMenu htmlFor="chkHamburguerMenu">
+      <span></span>
+    </HamburguerMenu>
 
   </HeaderContainer>
 )
