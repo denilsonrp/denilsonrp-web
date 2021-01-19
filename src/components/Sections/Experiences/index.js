@@ -7,6 +7,12 @@ import { SectionExperience } from './styles'
 const SectionExperiences = () => (
   <Section title='experiences()' id='experiences'>
     <SectionExperience>
+      <h3 className="-featured-color">@Agrotools, Remoto</h3>
+      <h4>Fullstack Developer</h4>
+      <time dateTime="2021-01">January 2021</time>
+    </SectionExperience>
+
+    <SectionExperience>
       <h3 className="-featured-color">@Climatempo, São José dos Campos/Remoto</h3>
       <h4>Fullstack Developer</h4>
       <time dateTime="2017-06">June 2017</time> - <time dateTime="2020-12">December 2020</time>
