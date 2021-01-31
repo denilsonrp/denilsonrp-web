@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
         <SectionExperiences {...data.allStrapiHomepage.edges[0].node.sectionExperiences} />
         <SectionEducation {...data.allStrapiHomepage.edges[0].node.sectionEducation} />
         <SectionSkills {...data.allStrapiHomepage.edges[0].node.sectionSkills} />
-        <SectionContact />
+        <SectionContact {...data.allStrapiHomepage.edges[0].node.sectionContact} {...data.allStrapiHomepage.edges[0].node.socialLinks} />
       </Layout>
   )
 }
@@ -69,6 +69,16 @@ export const query = graphql`
             skill {
               title
               featured
+            }
+          }
+          sectionContact {
+            title
+            description
+          }
+          socialLinks {
+            link {
+              title
+              url
             }
           }
         }
