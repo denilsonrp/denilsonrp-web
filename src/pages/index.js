@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
         <SectionAbout {...data.allStrapiHomepage.edges[0].node.sectionAbout} />
         <SectionExperiences {...data.allStrapiHomepage.edges[0].node.sectionExperiences} />
         <SectionEducation {...data.allStrapiHomepage.edges[0].node.sectionEducation} />
-        <SectionSkills />
+        <SectionSkills {...data.allStrapiHomepage.edges[0].node.sectionSkills} />
         <SectionContact />
       </Layout>
   )
@@ -62,6 +62,13 @@ export const query = graphql`
               title
               date
               description
+            }
+          }
+          sectionSkills {
+            title
+            skill {
+              title
+              featured
             }
           }
         }
