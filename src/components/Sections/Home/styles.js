@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
-export const Heading1 = styled.h1`
-  font-size: 1.5em;
-  line-height: 2;
-`
-
-export const Heading2 = styled.h2`
-  font-size: 1.5em;
-  line-height: 2;
-`
-
 export const Image = styled.img`
   border-radius: 100%;
   height: 200px;
   margin-bottom: 40px;
   width: 200px;
+`
+
+export const PresentationH1 = styled.h1`
+  font-size: 1.5em;
+  line-height: 2;
+`
+
+export const PresentationH2 = styled.h2`
+  font-size: 1.5em;
+  line-height: 2;
 `
 
 export const SectionContainer = styled.section`
