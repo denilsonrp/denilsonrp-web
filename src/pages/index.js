@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
         <SEO title='Home' />
         <SectionHome {...data.allStrapiHomepage.edges[0].node.sectionHome} />
         <SectionAbout {...data.allStrapiHomepage.edges[0].node.sectionAbout} />
-        <SectionExperiences />
+        <SectionExperiences {...data.allStrapiHomepage.edges[0].node.sectionExperiences} />
         <SectionEducation />
         <SectionSkills />
         <SectionContact />
@@ -45,6 +45,15 @@ export const query = graphql`
             link {
               title
               url
+            }
+          }
+          sectionExperiences {
+            title
+            experience {
+              title
+              date
+              role
+              description
             }
           }
         }
