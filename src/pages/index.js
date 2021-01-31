@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
       <Layout>
         <SEO title='Home' />
         <SectionHome {...data.allStrapiHomepage.edges[0].node.sectionHome} />
-        <SectionAbout />
+        <SectionAbout {...data.allStrapiHomepage.edges[0].node.sectionAbout} />
         <SectionExperiences />
         <SectionEducation />
         <SectionSkills />
@@ -38,6 +38,14 @@ export const query = graphql`
             }
             presentationH1
             presentationH2
+          }
+          sectionAbout {
+            title 
+            text
+            link {
+              title
+              url
+            }
           }
         }
       }
