@@ -7,10 +7,10 @@ import * as S from './styles'
 
 import Section from '../../Section'
 
-const SectionSkills = ({ title, skill }) => (
+const SectionSkills = ({ title, skills }) => (
   <Section title={title} id='skills'>
     <S.List>
-      {skill.map(item => {
+      {skills.map(item => {
         return (item.featured) 
                   ? <li key={item.title}>
                       <FontAwesomeIcon 
@@ -25,7 +25,7 @@ const SectionSkills = ({ title, skill }) => (
     </S.List>
 
     <S.List>
-      {skill.map(item => {
+      {skills.map(item => {
         return (!item.featured) ? <li key={item.title}>{item.title}</li> : null
       })}
     </S.List>

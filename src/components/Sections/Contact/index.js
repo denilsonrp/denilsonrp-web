@@ -7,7 +7,7 @@ import * as S from './styles'
 
 import Section from '../../Section'
 
-const SectionContact = ({ title, description, link: socialLinks }) => (
+const SectionContact = ({ title, description, links: socialLinks }) => (
   <Section title={title} id='contact'>
     <p>{description}</p>
 

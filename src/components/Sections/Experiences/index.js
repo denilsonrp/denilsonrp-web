@@ -4,9 +4,9 @@ import Section from '../../Section'
 
 import * as S from './styles'
 
-const SectionExperiences = ({ title, experience }) => (
+const SectionExperiences = ({ title, experiences }) => (
   <Section title={title} id='experiences'>
-    {experience.map(item => {
+    {experiences.map(item => {
       return (
         <S.SectionExperience key={item.title}>
           <h3 className="-featured-color">{item.title}</h3>    

@@ -12,15 +12,15 @@ import SEO from '../components/seo'
 
 const IndexPage = ({ data }) => {
   return (
-      <Layout>
-        <SEO title='Home' />
-        <SectionHome {...data.allStrapiHomepage.edges[0].node.sectionHome} />
-        <SectionAbout {...data.allStrapiHomepage.edges[0].node.sectionAbout} />
-        <SectionExperiences {...data.allStrapiHomepage.edges[0].node.sectionExperiences} />
-        <SectionEducation {...data.allStrapiHomepage.edges[0].node.sectionEducation} />
-        <SectionSkills {...data.allStrapiHomepage.edges[0].node.sectionSkills} />
-        <SectionContact {...data.allStrapiHomepage.edges[0].node.sectionContact} {...data.allStrapiHomepage.edges[0].node.socialLinks} />
-      </Layout>
+    <Layout>
+      <SEO title='Home' />
+      <SectionHome {...data.allStrapiHomepage.edges[0].node.sectionHome} />
+      <SectionAbout {...data.allStrapiHomepage.edges[0].node.sectionAbout} />
+      <SectionExperiences {...data.allStrapiHomepage.edges[0].node.sectionProfessionalExperiences} />
+      <SectionEducation {...data.allStrapiHomepage.edges[0].node.sectionAcademicFormations} />
+      <SectionSkills {...data.allStrapiHomepage.edges[0].node.sectionTechSkills} />
+      <SectionContact {...data.allStrapiHomepage.edges[0].node.sectionContact} {...data.allStrapiHomepage.edges[0].node.socialLinks} />
+    </Layout>
   )
 }
 
@@ -47,26 +47,26 @@ export const query = graphql`
               url
             }
           }
-          sectionExperiences {
+          sectionProfessionalExperiences {
             title
-            experience {
+            experiences {
               title
-              date
               role
-              description
-            }
-          }
-          sectionEducation {
-            title 
-            education {
-              title
               date
               description
             }
           }
-          sectionSkills {
+          sectionAcademicFormations {
+            title 
+            formations {
+              college
+              date
+              course
+            }
+          }
+          sectionTechSkills {
             title
-            skill {
+            skills {
               title
               featured
             }
@@ -76,9 +76,10 @@ export const query = graphql`
             description
           }
           socialLinks {
-            link {
+            links {
               title
               url
+              target
             }
           }
         }
