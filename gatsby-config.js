@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Denilson Raimundo de Paula | Web and Mobile Developer`,
@@ -18,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: process.env.GATSBY_STRAPI_API_URL,
         contentTypes: [],
         singleTypes: [`homepage`],
         queryLimit: 1000,
