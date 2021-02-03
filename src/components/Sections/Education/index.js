@@ -9,8 +9,8 @@ const SectionEducation = ({ title, formations }) => (
     {formations.map(item => {
       return (
         <S.SectionEducation key={item.college}>
-          <h3 className="-featured-color">{item.title}</h3>
-          <h4>{item.description}</h4>
+          <h3 className="-featured-color">{item.college}</h3>
+          <h4>{item.course}</h4>
           <time>{item.date}</time>
         </S.SectionEducation>
       )

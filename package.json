@@ -1,5 +1,5 @@
 {
-  "name": "denilsonrp.github.io",
+  "name": "denilsonrp-web",
   "private": true,
   "description": "Personal Website of Denilson Raimundo de Paula",
   "version": "0.1.0",
@@ -21,7 +21,6 @@
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-source-strapi": "^0.0.12",
     "gatsby-transformer-sharp": "^2.6.0",
-    "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -43,8 +42,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
