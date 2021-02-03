@@ -21,7 +21,7 @@ export const icons = {
   html5: faHtml5,
   css3: faCss3Alt,
   sass: faSass,
-  javascipt: faJsSquare,
+  javascript: faJsSquare,
   react: faReact,
   nodejs: faNodeJs,
   php: faPhp,

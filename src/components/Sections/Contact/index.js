@@ -15,7 +15,7 @@ const SectionContact = ({ title, description, links: socialLinks }) => (
       {socialLinks.map(item => {
         return (
           <li key={item.title}>
-            <a href={item.url} target="_blank" rel="noreferrer">
+            <a href={item.url} target={item.target} rel="noreferrer">
               <FontAwesomeIcon icon={icons[item.title.toLowerCase()]} aria-label={item.title} title={item.title} size='2x' />
             </a>
           </li>

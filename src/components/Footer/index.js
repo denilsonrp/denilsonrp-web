@@ -11,7 +11,7 @@ import {
 const Footer = () => (
   <FooterContainer>
     
-    <FooterLink href="http://github.com/denilsonrp/denilsonrp.github.io" target="_blank" rel="noreferrer">
+    <FooterLink href="http://github.com/denilsonrp/denilsonrp-web" target="_blank" rel="noreferrer">
       Developed with <FontAwesomeIcon icon={faHeart} aria-label="Developed with love" /> by Denilson.
     </FooterLink>
 
