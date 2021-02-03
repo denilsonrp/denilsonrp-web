@@ -1,20 +1,15 @@
 import React from 'react'
 
-import {
-  Heading1,
-  Heading2,
-  Image,
-  SectionContainer
-} from './styles'
+import { getImageUrl } from './../../../utils/getImageUrl'
 
-import ProfilePhoto from './../../../images/denilson.jpg'
+import * as S from './styles'
 
-const SectionHome = () => (
-  <SectionContainer>
-    <Image src={ProfilePhoto} alt="Foto Denilson" />
-    <Heading1>hi, my name is Denilson :)</Heading1>
-    <Heading2>and I build some things for Web and Mobile</Heading2>
-  </SectionContainer>
+const SectionHome = ({ image, presentationH1, presentationH2 }) => (
+  <S.SectionContainer>
+    <S.Image src={getImageUrl(image.url)} alt={image.alternativeText} />
+    <S.PresentationH1>{presentationH1}</S.PresentationH1>
+    <S.PresentationH2>{presentationH2}</S.PresentationH2>
+  </S.SectionContainer>
 )
 
 export default SectionHome

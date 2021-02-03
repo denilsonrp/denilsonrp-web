@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Denilson Raimundo de Paula | Web and Mobile Developer`,
@@ -13,6 +17,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.GATSBY_STRAPI_API_URL,
+        contentTypes: [],
+        singleTypes: [`homepage`],
+        queryLimit: 1000,
       },
     },
     `gatsby-transformer-sharp`,
